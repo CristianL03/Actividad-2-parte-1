@@ -1,0 +1,9 @@
+C = int(input("Código del empleado:"))
+N = str(input("Nombre completo:"))
+H = float(input("Horas trabajadas al mes:"))
+V = float(input("Valor por hora:"))
+P = float(input("Porcentaje de retención de la fuente(%):"))
+R = P/100
+SB = H*V
+SN = SB-(SB*R)
+print(f"código:{C}",f"nombre:{N}",f"salario bruto:{SB}",f"salario neto:{SN}", sep="\n")
